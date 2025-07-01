@@ -6,6 +6,9 @@ This repository contains the code, experimental setup, and supplementary materia
 
 Submitted to the **IEEE Transactions on Evolutionary Computation** (Special Issue on Recent Trends in Evolutionary Constrained Optimization).
 
+# Abstract
+Deploying deep learning models for audio classification tasks such as keyword spotting and bird call identification on resource-constrained embedded devices requires balancing model accuracy, memory usage, and false positive rate. This work proposes a hybrid evolutionary optimization framework combining global search with surrogate-guided local refinement to efficiently address this multi-objective problem under constraints. By leveraging predictive surrogate models, adaptive penalty mechanisms, and selective local search, the proposed method substantially reduces the computational burden. Experimental results show that the approach consistently discovers high-quality models satisfying multiple deployment objectives while being significantly more time-efficient than standard evolutionary baselines.
+
 ## 📝 Overview
 
 The goal of this project is to optimize deep neural network architectures for audio classification tasks such as **Keyword Spotting (KWS)** and **Bird Call Identification** on **TinyML devices**, under multiple conflicting objectives and constraints, including:
@@ -54,13 +57,13 @@ We used the following publicly available datasets:
 
  ## Environment Setup Instructions
 
-Create a new Conda environment (Python 3.12 recommended):
-# conda create --name cmoo_audio python=3.12
-# conda activate cmoo_audio
+# 1. Create a new Conda environment (Python 3.12 recommended):
+     conda create --name cmoo_audio python=3.12
+     conda activate cmoo_audio
 
-Install dependencies using pip:
+# 2. Install dependencies using pip:
 
-# pip install -r requirements.txt
+     pip install -r requirements.txt
 
 
 ## 📜 License
